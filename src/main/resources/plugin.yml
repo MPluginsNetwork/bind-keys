@@ -1,0 +1,4 @@
+name: BindKeys
+version: '${project.version}'
+main: net.mplugins.bindkeys.BindKeysPlugin
+api-version: 1.19
