@@ -1,0 +1,6 @@
+keybindings:
+  f:
+    permission: mplugins.keybinding.f
+    cancel-event: true
+    commands:
+      - say %player% used the f keybinding
