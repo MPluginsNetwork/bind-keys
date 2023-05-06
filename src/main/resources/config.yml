@@ -1,6 +1,16 @@
+# Possible keybindings are:
+# - f
+# - q
+# - shift+f
+# - shift+q
 keybindings:
   f:
     permission: mplugins.keybinding.f
     cancel-event: true
     commands:
       - say %player% used the f keybinding
+  shift+q:
+    permission: mplugins.keybinding.shift+q
+    cancel-event: true
+    commands:
+      - say %player% used the shift+q keybinding

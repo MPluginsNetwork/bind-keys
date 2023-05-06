@@ -26,7 +26,8 @@ public final class BindKeysPlugin extends JavaPlugin {
             final String key = entry.getKey();
             final String permission = getConfig().getString(path + ".permission");
             final List<String> commands = getConfig().getStringList(path + ".commands");
-            final Keybinding keybinding = new Keybinding(key, permission, commands);
+            final boolean cancelEvent = getConfig().getBoolean(path + ".cancel-event");
+            final Keybinding keybinding = new Keybinding(key, permission, cancelEvent, commands);
 
             keybindings.add(keybinding);
 
